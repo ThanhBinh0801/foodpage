@@ -23,10 +23,11 @@ function Contact() {
             title="binh da di qua day"
           ></iframe>
         </div>
+        <div className="footercontact">
+          <Popup />
+        </div>
       </section>
-      <footer className="footercontact">
-        <Popup />
-      </footer>
+      <footer></footer>
     </div>
   );
 }
