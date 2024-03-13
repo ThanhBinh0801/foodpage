@@ -1,0 +1,15 @@
+.map {
+  display: flex;
+  justify-content: center;
+}
+.headercontact {
+  text-align: center;
+}
+.shopnamecontact {
+  font-size: xx-large;
+  font-weight: bolder;
+}
+.popup {
+  display: flex;
+  justify-content: center;
+}
