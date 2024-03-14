@@ -121,7 +121,7 @@ function SearchButton() {
         </Container>
         {searchResult && (
           <div>
-            <h2>Kết quả:</h2>
+            <h2>Result:</h2>
             <ul>
               {searchResult.map((result, index) => (
                 <div key={index}>

@@ -20,10 +20,13 @@
   text-align: center;
 }
 .hinh {
-  width: 500px;
+  width: 300px;
   height: 300px;
   margin: 10px;
-  display: inline-block;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px #333333;
+  transition: 0.3s;
+  
 }
 .name {
   padding: 10px 20px;
@@ -34,7 +37,6 @@
   border-radius: 10px;
   background-color: #feab0d;
   color: #ffffff;
-  
   transition: 0.3s;
   box-shadow: 2px 2px 5px #333333;
   border-left: 1.5px solid #ffffff;
@@ -49,15 +51,15 @@
   border-radius: 10px;
   background-color: #feab0d;
   color: #ffffff;
-  
   transition: 0.3s;
   box-shadow: 2px 2px 5px #333333;
   border-left: 1.5px solid #ffffff;
   border-top: 1.5px solid #ffffff;
 }
 .App {
-  height: 400vh;
+  height: 300vh;
   background-color: rgb(255, 235, 204);
+ 
 }
 .navheader {
   font-size: xx-large;
@@ -96,4 +98,24 @@
   box-shadow: 2px 2px 5px #333333;
   border-left: 1.5px solid #ffffff;
   border-top: 1.5px solid #ffffff;
+  margin-top: -10px;
 }
+.view:hover
+{
+  background-color: #d28a04;
+}
+.view:active
+{
+  box-shadow: inset 2px 2px 5px #333333;
+}
+.product
+{
+  display : flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  float:left;
+  box-sizing: border-box;
+}
+
+  
