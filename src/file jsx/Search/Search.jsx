@@ -81,58 +81,62 @@ function SearchButton() {
 
   return (
     <div onClick={handleSearch}>
-      <Container>
-        <Row className="vh-70 d-flex justify-content-center align-items-center">
-          <Col md={8} lg={6} xs={12}>
-            <div className="border border-3 border-primary"></div>
-            <Card className="shadow">
-              <Card.Body>
-                <div className="mb-3 mt-md-4">
-                  <h2 className="fw-bold mb-2 text-uppercase ">
-                    What do you want to search
-                  </h2>
-                  <div className="mb-3">
-                    <Form onSubmit={handleSearch}>
-                      <Form.Group
-                        className="mb-3"
-                        controlId="formBasicPassword"
-                      >
-                        <Form.Label>Your search</Form.Label>
-                        <Form.Control
-                          type="Text"
-                          value={searchText}
-                          onChange={handleInputChange}
-                          onKeyDown={handleKeyDown}
-                          autoFocus
-                        />
-                      </Form.Group>
-                      <div className="d-grid">
-                        <Button onClick={handleSearch}>Search</Button>
-                      </div>
-                    </Form>
+      <header>
+        <Container>
+          <Row className="vh-70 d-flex justify-content-center align-items-center">
+            <Col md={8} lg={6} xs={12}>
+              <div className="border border-3 border-primary"></div>
+              <Card className="shadow">
+                <Card.Body>
+                  <div className="mb-3 mt-md-4">
+                    <h2 className="fw-bold mb-2 text-uppercase ">
+                      What do you want to search
+                    </h2>
+                    <div className="mb-3">
+                      <Form onSubmit={handleSearch}>
+                        <Form.Group
+                          className="mb-3"
+                          controlId="formBasicPassword"
+                        >
+                          <Form.Label>Your search</Form.Label>
+                          <Form.Control
+                            type="Text"
+                            value={searchText}
+                            onChange={handleInputChange}
+                            onKeyDown={handleKeyDown}
+                            autoFocus
+                          />
+                        </Form.Group>
+                        <div className="d-grid">
+                          <Button onClick={handleSearch}>Search</Button>
+                        </div>
+                      </Form>
+                    </div>
                   </div>
+                </Card.Body>
+              </Card>
+            </Col>
+          </Row>
+        </Container>
+        {searchResult && (
+          <div>
+            <h2>Kết quả:</h2>
+            <ul>
+              {searchResult.map((result, index) => (
+                <div key={index}>
+                  <Search
+                    Image={result.Image}
+                    Name={result.Name}
+                    Price={result.Price}
+                  />
                 </div>
-              </Card.Body>
-            </Card>
-          </Col>
-        </Row>
-      </Container>
-      {searchResult && (
-        <div>
-          <h2>Kết quả:</h2>
-          <ul>
-            {searchResult.map((result, index) => (
-              <div key={index}>
-                <Search
-                  Image={result.Image}
-                  Name={result.Name}
-                  Price={result.Price}
-                />
-              </div>
-            ))}
-          </ul>
-        </div>
-      )}
+              ))}
+            </ul>
+          </div>
+        )}
+      </header>
+      <section></section>
+      <footer></footer>
     </div>
   );
 }
