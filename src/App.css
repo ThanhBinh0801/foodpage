@@ -1,3 +1,7 @@
+.App {
+  font-family: sans-serif;
+}
+
 .map {
   display: flex;
   justify-content: center;
@@ -69,4 +73,15 @@
 }
 .custom-card-body {
   background-color: rgb(255, 235, 204, 0.7) !important;
+}
+
+.navbar-custom {
+  height: 60px;
+  /* background-color: rgb(255, 235, 204, 0.7) !important; */
+}
+.navbar-healthy {
+  background-color: rbg(0, 0, 0, 0.7);
+}
+.DropHealthy {
+  padding-left: 10px;
 }
