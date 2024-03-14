@@ -41,9 +41,6 @@
   border-radius: 10px;
   background-color: #feab0d;
   color: #ffffff;
-
-
-
   transition: 0.3s;
   box-shadow: 2px 2px 5px #333333;
   border-left: 1.5px solid #ffffff;
@@ -58,10 +55,6 @@
   border-radius: 10px;
   background-color: #feab0d;
   color: #ffffff;
-
-
-
-
   transition: 0.3s;
   box-shadow: 2px 2px 5px #333333;
   border-left: 1.5px solid #ffffff;
@@ -125,11 +118,11 @@
 .product
 {
   display : flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
-  float:left;
-  box-sizing: border-box;
+  flex-wrap:wrap;
+  float:none;
+  
 }
   
 
