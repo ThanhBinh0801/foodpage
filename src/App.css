@@ -24,32 +24,43 @@
   text-align: center;
 }
 .hinh {
-  width: 300px;
+  width: 500px;
   height: 300px;
   margin: 10px;
   display: inline-block;
 }
 .name {
+  padding: 10px 20px;
+  margin: 10px;
   font-size: 20px;
-  font-weight: bold;
+  font-weight: 600;
+  border: none;
   border-radius: 10px;
-  border: 1px solid black;
-  padding: -10px;
-  margin: 20px;
-  display: inline-block;
+  background-color: #feab0d;
+  color: #ffffff;
+  
+  transition: 0.3s;
+  box-shadow: 2px 2px 5px #333333;
+  border-left: 1.5px solid #ffffff;
+  border-top: 1.5px solid #ffffff;
 }
 .price {
+  padding: 10px 20px;
+  margin: 10px;
   font-size: 20px;
-  font-weight: bold;
+  font-weight: 600;
+  border: none;
   border-radius: 10px;
-  border: 1px solid black;
-  padding: 5px;
-  margin: 20px;
-  display: inline-block;
-  margin-top: 50px;
+  background-color: #feab0d;
+  color: #ffffff;
+  
+  transition: 0.3s;
+  box-shadow: 2px 2px 5px #333333;
+  border-left: 1.5px solid #ffffff;
+  border-top: 1.5px solid #ffffff;
 }
 .App {
-  height: 100vh;
+  height: 400vh;
   background-color: rgb(255, 235, 204);
 }
 .navheader {
@@ -74,14 +85,19 @@
 .custom-card-body {
   background-color: rgb(255, 235, 204, 0.7) !important;
 }
-
-.navbar-custom {
-  height: 60px;
-  /* background-color: rgb(255, 235, 204, 0.7) !important; */
-}
-.navbar-healthy {
-  background-color: rbg(0, 0, 0, 0.7);
-}
-.DropHealthy {
-  padding-left: 10px;
+.view
+{
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 20px;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  background-color: #feab0d;
+  color: #ffffff;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 2px 2px 5px #333333;
+  border-left: 1.5px solid #ffffff;
+  border-top: 1.5px solid #ffffff;
 }
