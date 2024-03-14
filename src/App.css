@@ -13,3 +13,54 @@
   display: flex;
   justify-content: center;
 }
+.namepricesearch span {
+  margin: 0 20px;
+}
+.searchresult {
+  text-align: center;
+}
+.hinh {
+  width: 300px;
+  height: 300px;
+  margin: 10px;
+  display: inline-block;
+}
+.name {
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 10px;
+  border: 1px solid black;
+  padding: -10px;
+  margin: 20px;
+  display: inline-block;
+}
+.price {
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 10px;
+  border: 1px solid black;
+  padding: 5px;
+  margin: 20px;
+  display: inline-block;
+  margin-top: 50px;
+}
+.App {
+  height: 100vh;
+  background-color: blanchedalmond;
+}
+.navheader {
+  font-size: xx-large;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-bottom: 1px solid #ccc;
+}
+.header {
+  height: 70px;
+}
+.navheader > * {
+  text-decoration: none;
+  color: black;
+}

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 import Form from "react-bootstrap/Form";
-import { useNavigate } from "react-router-dom";
+
 
 function Popup() {
   const [show, setShow] = useState(false);
@@ -13,7 +13,7 @@ function Popup() {
   const [Email, setEmail] = useState("");
   const [Submit, setSubmit] = useState("");
 
-  const navigate = useNavigate();
+ 
   const Submitform = (event) => {
     event.preventDefault();
     const newSubmit = {
@@ -42,10 +42,11 @@ function Popup() {
 
   return (
     <div className="popup">
-      <Button variant="primary" onClick={handleShow}>
-        Support: ninhthanhbinh8197@gmail.com
-      </Button>
 
+        <Button variant="primary" onClick={handleShow}>
+          Support: ninhthanhbinh8197@gmail.com
+        </Button>
+  
       <Modal show={show} onHide={handleClose}>
         <Modal.Header>
           <Modal.Title>Your Submit</Modal.Title>
