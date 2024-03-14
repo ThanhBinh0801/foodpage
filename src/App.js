@@ -5,12 +5,14 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Contact from "./file jsx/Contact file/Contact";
 import Login from "./file jsx/Login file/Login";
 import SearchButton from "./file jsx/Search/Search";
+import Menu from "./file jsx/Dropdown/MenuDropDown";
 
 function App() {
   return (
     <div className="App">
       <header className="header">
         <nav className="navheader">
+          <Menu />
           <Link to="/SearchButton">Search</Link>
           <Link to="/contact">Contact</Link>
           <Link to="/login">Login</Link>
