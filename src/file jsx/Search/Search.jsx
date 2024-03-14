@@ -81,7 +81,6 @@ function SearchButton() {
 
   return (
     <div onClick={handleSearch}>
-      
       <Container>
         <Row className="vh-70 d-flex justify-content-center align-items-center">
           <Col md={8} lg={6} xs={12}>
@@ -97,7 +96,7 @@ function SearchButton() {
                       <Form.Group
                         className="mb-3"
                         controlId="formBasicPassword"
-                        >
+                      >
                         <Form.Label>Your search</Form.Label>
                         <Form.Control
                           type="Text"
@@ -105,7 +104,7 @@ function SearchButton() {
                           onChange={handleInputChange}
                           onKeyDown={handleKeyDown}
                           autoFocus
-                          />
+                        />
                       </Form.Group>
                       <div className="d-grid">
                         <Button onClick={handleSearch}>Search</Button>
@@ -133,7 +132,7 @@ function SearchButton() {
             ))}
           </ul>
         </div>
-      )}    
+      )}
     </div>
   );
 }
