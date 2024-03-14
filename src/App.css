@@ -46,7 +46,7 @@
 }
 .App {
   height: 100vh;
-  background-color: blanchedalmond;
+  background-color: rgb(255, 235, 204);
 }
 .navheader {
   font-size: xx-large;
@@ -63,4 +63,10 @@
 .navheader > * {
   text-decoration: none;
   color: black;
+}
+.card-search {
+  background-color: rgb(246, 231, 182);
+}
+.custom-card-body {
+  background-color: rgb(255, 235, 204, 0.7) !important;
 }

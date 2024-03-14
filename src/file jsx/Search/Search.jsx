@@ -82,12 +82,12 @@ function SearchButton() {
   return (
     <div onClick={handleSearch}>
       <header>
-        <Container>
-          <Row className="vh-70 d-flex justify-content-center align-items-center">
+        <Container className="container">
+          <Row className="vh-70 d-flex justify-content-center align-items-center ">
             <Col md={8} lg={6} xs={12}>
               <div className="border border-3 border-primary"></div>
-              <Card className="shadow">
-                <Card.Body>
+              <Card>
+                <Card.Body className="custom-card-body">
                   <div className="mb-3 mt-md-4">
                     <h2 className="fw-bold mb-2 text-uppercase ">
                       What do you want to search
@@ -102,6 +102,7 @@ function SearchButton() {
                           <Form.Control
                             type="Text"
                             value={searchText}
+                            placeholder="..."
                             onChange={handleInputChange}
                             onKeyDown={handleKeyDown}
                             autoFocus
