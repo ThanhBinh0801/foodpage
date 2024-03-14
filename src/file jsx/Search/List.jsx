@@ -6,7 +6,7 @@ function Search({ Name, Price, Image }) {
         <span className="name"> {Name}</span>
         <span className="price">Price: {Price}</span>
       </p>
-      <button>View Detail</button>
+      <button className="view">View Detail</button>
     </div>
   );
 }
