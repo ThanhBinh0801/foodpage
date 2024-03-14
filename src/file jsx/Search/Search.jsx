@@ -44,7 +44,7 @@ function SearchButton() {
         !yogurtResponse.ok ||
         !smoothieResponse.ok
       ) {
-        throw new Error("Lỗi khi lấy dữ liệu từ API.");
+        throw new Error("An error occurred while retrieving data from the API.");
       }
 
       const foodData = await foodResponse.json();
@@ -90,7 +90,7 @@ function SearchButton() {
                 <Card.Body className="custom-card-body">
                   <div className="mb-3 mt-md-4">
                     <h2 className="fw-bold mb-2 text-uppercase ">
-                      What do you want to search
+                      What do you want to search ?
                     </h2>
                     <div className="mb-3">
                       <Form onSubmit={handleSearch}>
