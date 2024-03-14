@@ -38,7 +38,7 @@
   border-radius: 10px;
   background-color: #feab0d;
   color: #ffffff;
-  
+
   transition: 0.3s;
   box-shadow: 2px 2px 5px #333333;
   border-left: 1.5px solid #ffffff;
@@ -53,7 +53,7 @@
   border-radius: 10px;
   background-color: #feab0d;
   color: #ffffff;
-  
+
   transition: 0.3s;
   box-shadow: 2px 2px 5px #333333;
   border-left: 1.5px solid #ffffff;
@@ -85,8 +85,10 @@
 .custom-card-body {
   background-color: rgb(255, 235, 204, 0.7) !important;
 }
-.view
-{
+.DropHealthy {
+  padding-left: 10px;
+}
+.view {
   padding: 10px 20px;
   margin: 10px;
   font-size: 20px;
