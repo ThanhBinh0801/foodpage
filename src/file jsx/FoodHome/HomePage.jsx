@@ -1,27 +1,71 @@
-import { Link, Routes, Route } from "react-router-dom";
-
+import { Link } from "react-router-dom";
 function Home() {
   return (
     <div className="homepage">
       <div>
-        <Link>Healthy Snacks</Link>
+        <Link>
+          <span>Healthy Snacks</span>
+          <span>
+            <img src="./imgHome/anhmenuchinh.jpg" alt="" />
+          </span>
+        </Link>
         <div className="detail">
-          <Link to="Smothies">Smoothies</Link>
-          <Link to="/Cereal">Cereal</Link>
+          <Link to="/Smooth">
+            <span>Smoothies</span>
+            <span>
+              <img src="./imgHome/anhSmoothies.jpg" alt="" />
+            </span>
+          </Link>
+          <Link to="Cereal">
+            <span>Cereal</span>
+            <span>
+              <img src="./imgHome/anhCereal.png" alt="" />
+            </span>
+          </Link>
         </div>
       </div>
       <div>
-        <Link>Snacks for kids</Link>
+        <Link>
+          <span>Snacks for Kids</span>
+          <span>
+            <img src="./imgHome/anhSnacksforkids.png" alt="" />
+          </span>
+        </Link>
         <div className="detail">
-          <Link to="Smothies">Cakes</Link>
-          <Link to="/Cereal">Yogurt</Link>
+          <Link to="Cakes">
+            <span>Cakes</span>
+            <span>
+              <img src="./imgHome/anhCakes.png" alt="" />
+            </span>
+          </Link>
+          <Link to="/Yogurt">
+            <span>Yogurt</span>
+            <span>
+              <img src="./imgHome/anhYogurt.jpg" alt="" />
+            </span>
+          </Link>
         </div>
       </div>
       <div>
-        <Link>East on stomach snacks</Link>
+        <Link>
+          <span>East on stomach snacks</span>
+          <span>
+            <img src="./imgHome/anhEasyonStomachSnacks.png" alt="" />
+          </span>
+        </Link>
         <div className="detail">
-          <Link to="Smothies">Foods for EOSS</Link>
-          <Link to="/Cereal">Drinks</Link>
+          <Link to="Foods for EOSS">
+            <span>Foods for EOSS</span>
+            <span>
+              <img src="./imgHome/anhFoodforEOSS.png" alt="" />
+            </span>
+          </Link>
+          <Link to="/Drinks">
+            <span>Drinks</span>
+            <span>
+              <img src="./imgHome/anhDrinks.png" alt="" />
+            </span>
+          </Link>
         </div>
       </div>
     </div>
