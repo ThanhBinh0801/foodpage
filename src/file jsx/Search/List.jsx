@@ -1,12 +1,20 @@
 function Search({ Name, Price, Image }) {
   return (
     <div className="product">
-      <img src={Image} alt="Son" className="hinh" />
-      <p className="namepricesearch">
-        <span className="name"> {Name}</span>
-        <span className="price">Price: {Price}</span>
-      </p>
+      <div className="name">
+        {Name}
+        </div>
+      <div className="hinh">
+      <img src={Image} alt="Son"  />
+      </div>
+      <p className="namepricesearch">     
+        <div className="price">
+         Price: {Price}
+        </div>
       <button className="view">Detail</button>
+      </p>
+      
+      
     </div>
   );
 }
