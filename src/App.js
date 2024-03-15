@@ -13,6 +13,7 @@ import Cereal from "./file jsx/CerealHome/CerealHome";
 import Cakes from "./file jsx/CakesHome/CakesHome";
 import Yogurt from "./file jsx/YogurtHome/YogurtHome";
 import DinksForEoss from "./file jsx/DinksForEossHome/DinksForEoss";
+import Detail from "./file jsx/Smoothies/Sinhtobo";
 function App() {
   const [loggedInUser, setLoggedInUser] = useState(null);
   return (
@@ -40,6 +41,7 @@ function App() {
           <Route path="/Smooth" element={<Smooth />} />
           <Route path="login" element={<Login />} />
           <Route path="/smooth" element={<Smooth />} />
+          <Route path="/smooth/:id" element={<Detail/>}/>
           <Route path="/FoodForEoss" element={<FoodForEoss />} />
           <Route path="/Cereal" element={<Cereal />} />
           <Route path="/Cakes" element={<Cakes />} />

@@ -17,6 +17,7 @@ function Smooth() {
       })
       .then((data) => {
         setSmoothies(data);
+        console.log(data.img);
       })
       .catch((error) => {
         console.log(error);
@@ -46,7 +47,11 @@ function Smooth() {
             <div className="row" key={index}>
               {pair.map((smoothie, innerIndex) => (
                 <div className="col" key={innerIndex}>
-                  <Food Name={smoothie.Name} img={smoothie.img} />
+                  <Food
+                    Name={smoothie.Name}
+                    img={smoothie.img}
+                    id={smoothie.id}
+                  />
                 </div>
               ))}
             </div>
