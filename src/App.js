@@ -1,4 +1,5 @@
 import "./App.css";
+import React, { useState } from "react";
 import { Link, Route, Routes } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Contact from "./file jsx/Contact file/Contact";
@@ -8,6 +9,7 @@ import Menu from "./file jsx/Dropdown/MenuDropDown";
 import Home from "./file jsx/FoodHome/HomePage";
 import Smooth from "./file jsx/Smoothies/SmoothiesHome";
 function App() {
+  const [loggedInUser, setLoggedInUser] = useState(null);
   return (
     <div className="App">
       <header className="header">
@@ -16,18 +18,24 @@ function App() {
           <Link to="/SearchButton">Search</Link>
           <Link to="/Home">Food Shop</Link>
           <Link to="/contact">Contact</Link>
-          <Link to="/login">Login</Link>
+          {loggedInUser ? ( // Check if user is logged in
+            <Link to="/profile">{loggedInUser.Name}</Link> // Display user's name as link
+          ) : (
+            <Link to="/login">Login</Link>
+          )}
         </nav>
         <Routes>
           <Route path="/SearchButton" element={<SearchButton />} />
           <Route path="Home" element={<Home />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="login" element={<Login />} />
+          <Route
+            path="/login"
+            element={<Login setLoggedInUser={setLoggedInUser} />}
+          />
           <Route path="/Smooth" element={<Smooth />} />
         </Routes>
       </header>
     </div>
   );
 }
-
 export default App;

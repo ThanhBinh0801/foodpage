@@ -3,7 +3,7 @@ import { Col, Button, Row, Container, Card, Form } from "react-bootstrap";
 import Signup from "./Signup";
 import { useNavigate } from "react-router-dom";
 
-function Login() {
+function Login({ setLoggedInUser }) {
   const navigate = useNavigate();
   const [loginName, setLoginName] = useState("");
   const [loginPassword, setLoginPassword] = useState("");
@@ -30,6 +30,7 @@ function Login() {
       if (foundUser) {
         // Successful login
         console.log("Login successful");
+        setLoggedInUser(foundUser);
         navigate("/contact"); // Navigate to the dashboard or any other page
       } else {
         // Unsuccessful login
@@ -105,7 +106,7 @@ function Login() {
       <section></section>
       <footer></footer>
     </div>
-    );
+  );
 }
 
 export default Login;
