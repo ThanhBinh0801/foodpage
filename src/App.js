@@ -1,4 +1,5 @@
 import "./App.css";
+import React, { useState } from "react";
 import { Link, Route, Routes } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Contact from "./file jsx/Contact file/Contact";
@@ -12,7 +13,9 @@ import Cereal from "./file jsx/CerealHome/CerealHome";
 import Cakes from "./file jsx/CakesHome/CakesHome";
 import Yogurt from "./file jsx/YogurtHome/YogurtHome";
 import DinksForEoss from "./file jsx/DinksForEossHome/DinksForEoss";
+import Detail from "./file jsx/Smoothies/Sinhtobo";
 function App() {
+  const [loggedInUser, setLoggedInUser] = useState(null);
   return (
     <div className="App">
       <header className="header">
@@ -21,14 +24,24 @@ function App() {
           <Link to="/SearchButton">Search</Link>
           <Link to="/Home">Food Shop</Link>
           <Link to="/contact">Contact</Link>
-          <Link to="/login">Login</Link>
+          {loggedInUser ? ( // Check if user is logged in
+            <Link to="/profile">{loggedInUser.Name}</Link> // Display user's name as link
+          ) : (
+            <Link to="/login">Login</Link>
+          )}
         </nav>
         <Routes>
           <Route path="/SearchButton" element={<SearchButton />} />
           <Route path="Home" element={<Home />} />
           <Route path="/contact" element={<Contact />} />
+          <Route
+            path="/login"
+            element={<Login setLoggedInUser={setLoggedInUser} />}
+          />
+          <Route path="/Smooth" element={<Smooth />} />
           <Route path="login" element={<Login />} />
           <Route path="/smooth" element={<Smooth />} />
+          <Route path="/smooth/:id" element={<Detail/>}/>
           <Route path="/FoodForEoss" element={<FoodForEoss />} />
           <Route path="/Cereal" element={<Cereal />} />
           <Route path="/Cakes" element={<Cakes />} />
@@ -39,5 +52,4 @@ function App() {
     </div>
   );
 }
-
 export default App;
