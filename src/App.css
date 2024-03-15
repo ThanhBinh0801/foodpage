@@ -17,23 +17,25 @@
   display: flex;
   justify-content: center;
 }
-.namepricesearch span {
-  margin: 0 20px;
+.namepricesearch  {
+  
+  display: flex;
 }
 .searchresult {
   text-align: center;
 }
 .hinh {
   width: 300px;
-  height: 300px;
-  margin: 10px;
+  height: 210px;
+  margin: 18px 0;
   border-radius: 10px;
-  box-shadow: 2px 2px 5px #333333;
   transition: 0.3s;
+  
 }
+
 .name {
   padding: 10px 20px;
-  margin: 10px;
+  
   font-size: 20px;
   font-weight: 600;
   border: none;
@@ -60,7 +62,7 @@
   border-top: 1.5px solid #ffffff;
 }
 .App {
-  height: 300vh;
+  height: 450vh;
   background-color: rgb(255, 235, 204);
 }
 .navheader {
@@ -102,7 +104,6 @@
   box-shadow: 2px 2px 5px #333333;
   border-left: 1.5px solid #ffffff;
   border-top: 1.5px solid #ffffff;
-  margin-top: -10px;
 }
 .view:hover {
   background-color: #d28a04;
@@ -113,11 +114,11 @@
 .product
 {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   flex-wrap:wrap;
-  float:none
-  
+  float:none;
 }
 .homepage {
   text-align: center;
@@ -127,3 +128,4 @@
   display: flex;
   justify-content: space-around;
 }
+

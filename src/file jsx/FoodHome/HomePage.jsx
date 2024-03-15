@@ -16,7 +16,7 @@ function Home() {
               <img src="./imgHome/anhSmoothies.jpg" alt="" />
             </span>
           </Link>
-          <Link to="Cereal">
+          <Link to="/Cereal">
             <span>Cereal</span>
             <span>
               <img src="./imgHome/anhCereal.png" alt="" />
@@ -32,7 +32,7 @@ function Home() {
           </span>
         </Link>
         <div className="detail">
-          <Link to="Cakes">
+          <Link to="/Cakes">
             <span>Cakes</span>
             <span>
               <img src="./imgHome/anhCakes.png" alt="" />
@@ -54,13 +54,13 @@ function Home() {
           </span>
         </Link>
         <div className="detail">
-          <Link to="Foods for EOSS">
+          <Link to="/FoodForEoss">
             <span>Foods for EOSS</span>
             <span>
               <img src="./imgHome/anhFoodforEOSS.png" alt="" />
             </span>
           </Link>
-          <Link to="/Drinks">
+          <Link to="/DinksForEoss">
             <span>Drinks</span>
             <span>
               <img src="./imgHome/anhDrinks.png" alt="" />
