@@ -1,6 +1,4 @@
-import { Link, Routes, Route } from "react-router-dom";
-import Smooth from "../Smoothies/SmoothiesHome";
-import Food from "../Smoothies/Food";
+import { Link } from "react-router-dom";
 function Home() {
   return (
     <div className="homepage">
@@ -70,9 +68,6 @@ function Home() {
           </Link>
         </div>
       </div>
-      <Routes>
-        <Route path="/Smooth" element={<Smooth />} />
-      </Routes>
     </div>
   );
 }
