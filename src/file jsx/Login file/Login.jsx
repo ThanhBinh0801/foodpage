@@ -105,7 +105,7 @@ function Login() {
       <section></section>
       <footer></footer>
     </div>
-  );
+    );
 }
 
 export default Login;
