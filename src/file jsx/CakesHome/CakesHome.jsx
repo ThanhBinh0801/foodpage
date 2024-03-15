@@ -2,11 +2,11 @@ import Food from "./Food";
 import React, { useState, useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-function Smooth() {
+function Cakes() {
   const [smoothies, setSmoothies] = useState([]);
 
   const fetchSmoothies = () => {
-    fetch("https://65d55b923f1ab8c63436c64d.mockapi.io/smoothies", {
+    fetch("https://65d55b923f1ab8c63436c64d.mockapi.io/Cakes", {
       method: "GET",
       headers: { "content-type": "application/json" },
     })
@@ -40,7 +40,6 @@ function Smooth() {
     <div>
       <section className="container">
         <td />
-        <img src="./imgSmoothies/anhsinhto.jpg" alt="" />
         <div className="col anhbensmoothies">
           {chunkArray(smoothies, 2).map((pair, index) => (
             <div className="row" key={index}>
@@ -57,4 +56,4 @@ function Smooth() {
   );
 }
 
-export default Smooth;
+export default Cakes;
