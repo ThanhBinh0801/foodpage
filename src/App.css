@@ -102,7 +102,6 @@
   box-shadow: 2px 2px 5px #333333;
   border-left: 1.5px solid #ffffff;
   border-top: 1.5px solid #ffffff;
-
   margin-top: -10px;
 }
 .view:hover {
@@ -111,12 +110,14 @@
 .view:active {
   box-shadow: inset 2px 2px 5px #333333;
 }
-.product {
+.product
+{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
-  float: none;
+  flex-wrap:wrap;
+  float:none
+  
 }
 .homepage {
   text-align: center;

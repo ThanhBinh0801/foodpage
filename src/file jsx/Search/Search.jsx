@@ -5,7 +5,7 @@ import Search from "./List";
 function SearchButton() {
   const [searchText, setSearchText] = useState("");
   const [searchResult, setSearchResult] = useState(null);
-
+  
   const handleInputChange = (event) => {
     setSearchText(event.target.value);
   };
@@ -137,7 +137,9 @@ function SearchButton() {
         )}
       </header>
       <section></section>
-      <footer></footer>
+      <footer>
+        
+      </footer>
     </div>
   );
 }
