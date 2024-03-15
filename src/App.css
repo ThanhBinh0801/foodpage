@@ -30,7 +30,6 @@
   border-radius: 10px;
   box-shadow: 2px 2px 5px #333333;
   transition: 0.3s;
-  
 }
 .name {
   padding: 10px 20px;
@@ -63,7 +62,6 @@
 .App {
   height: 300vh;
   background-color: rgb(255, 235, 204);
- 
 }
 .navheader {
   font-size: xx-large;
@@ -107,12 +105,10 @@
 
   margin-top: -10px;
 }
-.view:hover
-{
+.view:hover {
   background-color: #d28a04;
 }
-.view:active
-{
+.view:active {
   box-shadow: inset 2px 2px 5px #333333;
 }
 .product
@@ -124,7 +120,11 @@
   float:none
   
 }
-  
-
-
-
+.homepage {
+  text-align: center;
+  text-decoration: none;
+}
+.detail {
+  display: flex;
+  justify-content: space-around;
+}
