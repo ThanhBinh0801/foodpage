@@ -76,10 +76,12 @@
 }
 .header {
   height: 70px;
+  background-color: #FFA500;
 }
 .navheader > * {
   text-decoration: none;
   color: black;
+
 }
 .card-search {
   background-color: rgb(246, 231, 182);
@@ -123,6 +125,7 @@
 .homepage {
   text-align: center;
   text-decoration: none;
+  background-color: bisque;
 }
 .detail {
   display: flex;
