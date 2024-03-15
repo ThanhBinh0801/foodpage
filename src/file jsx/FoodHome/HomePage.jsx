@@ -70,9 +70,6 @@ function Home() {
           </Link>
         </div>
       </div>
-      <Routes>
-        <Route path="/Smooth" element={<Smooth />} />
-      </Routes>
     </div>
   );
 }
