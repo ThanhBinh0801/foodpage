@@ -12,8 +12,8 @@ import FoodForEoss from "./file jsx/FoodForEoss/FoodForEoss"
 import Cereal from "./file jsx/CerealHome/CerealHome";
 import Cakes from "./file jsx/CakesHome/CakesHome";
 import Yogurt from "./file jsx/YogurtHome/YogurtHome";
-import DinksForEoss from "./file jsx/DinksForEossHome/DinksForEoss";
 import Detail from "./file jsx/Smoothies/Sinhtobo";
+import DrinksForEoss from "./file jsx/DrinksForEossHome/DrinksForEoss";
 function App() {
   const [loggedInUser, setLoggedInUser] = useState(null);
   return (
@@ -46,7 +46,7 @@ function App() {
           <Route path="/Cereal" element={<Cereal />} />
           <Route path="/Cakes" element={<Cakes />} />
           <Route path="/Yogurt" element={<Yogurt />} />
-          <Route path="/DinksForEoss" element={<DinksForEoss />} />
+          <Route path="/DrinksForEoss" element={<DrinksForEoss />} />
         </Routes>
       </header>
     </div>

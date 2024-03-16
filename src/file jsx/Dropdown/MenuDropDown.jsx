@@ -17,15 +17,25 @@ function Menu() {
                 className="DropHealthy"
               >
                 <NavDropdown.Item ><Link to='/Smooth'>Smoothies</Link></NavDropdown.Item>
-                <NavDropdown.Item href="">Cereal</NavDropdown.Item>
+                <NavDropdown.Item ><Link to='/Cereal'>Cereal</Link></NavDropdown.Item>
               </NavDropdown>
-              <NavDropdown.Item href="#action/3.2">
-                Snacks for kids
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">
-                Easy on stomach snacks
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.4">Smothies</NavDropdown.Item>
+              <NavDropdown
+                title={<span style={{ color: "white" }}>Snacks For Kids</span>}
+                menuVariant="light"
+                className="DropHealthy"
+              >
+                <NavDropdown.Item ><Link to='/Cakes'>Cakes</Link></NavDropdown.Item>
+                <NavDropdown.Item ><Link to='/Yogurt'>Yogurt</Link></NavDropdown.Item>
+              </NavDropdown>
+              <NavDropdown
+                title={<span style={{ color: "white" }}>Easy On Stomach Snacks</span>}
+                menuVariant="light"
+                className="DropHealthy"
+              >
+                <NavDropdown.Item ><Link to='/FoodForEOSS'>FoodForEOSS</Link></NavDropdown.Item>
+                <NavDropdown.Item ><Link to='/Yogurt'>DrinkForEOSS</Link></NavDropdown.Item>
+              </NavDropdown>
+              <NavDropdown.Item href="#action/3.4">Smoothies</NavDropdown.Item>
             </NavDropdown>
           </Nav>
         </Navbar.Collapse>

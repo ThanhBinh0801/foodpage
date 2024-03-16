@@ -6,14 +6,14 @@ function Home() {
         <Link>
           <span>Healthy Snacks</span>
           <span>
-            <img src="./imgHome/anhmenuchinh.jpg" alt="" />
+            <img src="./imgHome/anhmenuchinh.png" alt="" />
           </span>
         </Link>
         <div className="detail">
           <Link to="/Smooth">
             <span>Smoothies</span>
             <span>
-              <img src="./imgHome/anhSmoothies.jpg" alt="" />
+              <img src="./imgHome/anhSmoothies.png" alt="" />
             </span>
           </Link>
           <Link to="/Cereal">
@@ -41,7 +41,7 @@ function Home() {
           <Link to="/Yogurt">
             <span>Yogurt</span>
             <span>
-              <img src="./imgHome/anhYogurt.jpg" alt="" />
+              <img src="./imgHome/anhYogurt.png" alt="" />
             </span>
           </Link>
         </div>
@@ -60,7 +60,7 @@ function Home() {
               <img src="./imgHome/anhFoodforEOSS.png" alt="" />
             </span>
           </Link>
-          <Link to="/DinksForEoss">
+          <Link to="/DrinksForEoss">
             <span>Drinks</span>
             <span>
               <img src="./imgHome/anhDrinks.png" alt="" />
