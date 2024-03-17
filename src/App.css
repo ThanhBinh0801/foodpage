@@ -35,7 +35,6 @@
 
 .name {
   padding: 10px 20px;
-  
   font-size: 20px;
   font-weight: 600;
   border: none;
@@ -62,7 +61,8 @@
   border-top: 1.5px solid #ffffff;
 }
 .App {
-  height: 450vh;
+  height: 300vh;
+  text-align: center;
   background-color: rgb(255, 235, 204);
 }
 .navheader {
@@ -92,6 +92,7 @@
 }
 .DropHealthy {
   padding-left: 10px;
+  text-decoration: none;
 }
 .view {
   padding: 10px 20px;

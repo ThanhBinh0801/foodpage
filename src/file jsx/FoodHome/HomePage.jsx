@@ -61,7 +61,7 @@ function Home() {
               <img src="./imgHome/anhFoodforEOSS.png" alt="" />
             </span>
           </Link>
-          <Link to="/DinksForEoss">
+          <Link to="/DrinksForEoss">
             <span>Drinks</span>
             <span>
               <img src="./imgHome/anhDrinks.png" alt="" />
