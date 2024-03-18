@@ -1,7 +1,6 @@
 .App {
   font-family: sans-serif;
 }
-
 .map {
   display: flex;
   justify-content: center;
@@ -61,9 +60,9 @@
   border-top: 1.5px solid #ffffff;
 }
 .App {
-  height: 250vh;
   text-align: center;
   background-color: rgb(255, 235, 204);
+  height:unset;
 }
 .navheader {
   font-size: xx-large;
@@ -126,7 +125,6 @@
 }
 .homepage {
   text-align: center;
-  background-color: bisque;
 }
 .detail {
   display: flex;
