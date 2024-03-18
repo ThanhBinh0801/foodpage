@@ -168,7 +168,8 @@ function SearchButton() {
           )
         )}
       </header>
-      <section></section>
+      <section>
+      </section>
       <footer></footer>
     </div>
   );

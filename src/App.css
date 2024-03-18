@@ -60,7 +60,7 @@
 .App {
   text-align: center;
   background-color: rgb(255, 235, 204);
-  height:unset;
+  height:350vh;
 }
 .navheader {
   font-size: xx-large;
