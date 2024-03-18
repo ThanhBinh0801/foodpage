@@ -60,7 +60,7 @@
 .App {
   text-align: center;
   background-color: rgb(255, 235, 204);
-  height:350vh;
+  height:unset;
 }
 .navheader {
   font-size: xx-large;
@@ -125,19 +125,12 @@
 .detail {
   display: flex;
   justify-content: space-around;
-  margin-right: 700px;
-  margin-left: 700px;
 }
 .FoodShopmenu {
   font-size: 60px;
 }
-.Healthyimgbox {
-  position: relative;
-  width: 100%;
-}
 .HealthySnacksName {
   display: flex;
-  flex-direction: column;
 }
 .Healthytitle {
   width: max-content;
@@ -162,4 +155,7 @@
   display: flex;
   justify-self: center;
   height: 150%;
+}
+.st {
+  text-decoration: none;
 }
