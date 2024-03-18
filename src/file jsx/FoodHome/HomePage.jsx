@@ -2,18 +2,19 @@ import { Link } from "react-router-dom";
 function Home() {
   return (
     <div className="homepage">
+      <br />
       <div>
-        <Link>
-          <span>Healthy Snacks</span>
-          <span>
-            <img src="./imgHome/anhmenuchinh.jpg" alt="" />
-          </span>
+        <Link className="HealthySnacksName">
+          <div className="Healthyimgbox">
+            <img src="./imgHome/anhmenuchinh.png" alt="" />
+          </div>
+          <div className="Healthytitle"><span >Healthy Snacks</span></div>
         </Link>
         <div className="detail">
           <Link to="/Smooth">
             <span>Smoothies</span>
             <span>
-              <img src="./imgHome/anhSmoothies.jpg" alt="" />
+              <img src="./imgHome/anhSmoothies.png" alt="" />
             </span>
           </Link>
           <Link to="/Cereal">
@@ -23,7 +24,7 @@ function Home() {
             </span>
           </Link>
         </div>
-      </div>
+      </div> <br />
       <div>
         <Link>
           <span>Snacks for Kids</span>
@@ -41,27 +42,27 @@ function Home() {
           <Link to="/Yogurt">
             <span>Yogurt</span>
             <span>
-              <img src="./imgHome/anhYogurt.jpg" alt="" />
+              <img src="./imgHome/anhYogurt.png" alt="" />
             </span>
           </Link>
         </div>
-      </div>
+      </div> <br />
       <div>
         <Link>
-          <span>East on stomach snacks</span>
+          <span>Easy on stomach snacks</span>
           <span>
             <img src="./imgHome/anhEasyonStomachSnacks.png" alt="" />
           </span>
         </Link>
         <div className="detail">
           <Link to="/FoodForEoss">
-            <span>Foods for EOSS</span>
+            <span>Foods For EOSS</span>
             <span>
               <img src="./imgHome/anhFoodforEOSS.png" alt="" />
             </span>
           </Link>
-          <Link to="/DinksForEoss">
-            <span>Drinks</span>
+          <Link to="/DrinksForEoss">
+            <span>Drinks For EOSS</span>
             <span>
               <img src="./imgHome/anhDrinks.png" alt="" />
             </span>

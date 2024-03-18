@@ -12,8 +12,8 @@ import FoodForEoss from "./file jsx/FoodForEoss/FoodForEoss";
 import Cereal from "./file jsx/CerealHome/CerealHome";
 import Cakes from "./file jsx/CakesHome/CakesHome";
 import Yogurt from "./file jsx/YogurtHome/YogurtHome";
-import DinksForEoss from "./file jsx/DinksForEossHome/DinksForEoss";
 import Detail from "./file jsx/Smoothies/Sinhtobo";
+import DrinksForEoss from "./file jsx/DrinksForEossHome/DrinksForEoss";
 function App() {
   const [loggedInUser, setLoggedInUser] = useState(null);
   return (
@@ -22,7 +22,7 @@ function App() {
         <nav className="navheader">
           <Menu />
           <Link to="/SearchButton">Search</Link>
-          <Link to="/Home">Food Shop</Link>
+          <Link to="/Home" className="FoodShopmenu">Food Shop</Link>
           <Link to="/contact">Contact</Link>
           {loggedInUser ? ( // Check if user is logged in
             <Link to="/profile">{loggedInUser.Name}</Link> // Display user's name as link
@@ -46,7 +46,7 @@ function App() {
           <Route path="/Cereal" element={<Cereal />} />
           <Route path="/Cakes" element={<Cakes />} />
           <Route path="/Yogurt" element={<Yogurt />} />
-          <Route path="/DinksForEoss" element={<DinksForEoss />} />
+          <Route path="/DrinksForEoss" element={<DrinksForEoss />} />
         </Routes>
       </header>
     </div>

@@ -2,7 +2,7 @@ import Food from "./Food";
 import React, { useState, useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-function DinksForEoss() {
+function DrinksForEoss() {
   const [smoothies, setSmoothies] = useState([]);
 
   const fetchSmoothies = () => {
@@ -56,4 +56,4 @@ function DinksForEoss() {
   );
 }
 
-export default DinksForEoss;
+export default DrinksForEoss;
