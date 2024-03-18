@@ -8,7 +8,7 @@ import SearchButton from "./file jsx/Search/Search";
 import Menu from "./file jsx/Dropdown/MenuDropDown";
 import Home from "./file jsx/FoodHome/HomePage";
 import Smooth from "./file jsx/Smoothies/SmoothiesHome";
-import FoodForEoss from "./file jsx/FoodForEoss/FoodForEoss"
+import FoodForEoss from "./file jsx/FoodForEoss/FoodForEoss";
 import Cereal from "./file jsx/CerealHome/CerealHome";
 import Cakes from "./file jsx/CakesHome/CakesHome";
 import Yogurt from "./file jsx/YogurtHome/YogurtHome";
@@ -41,7 +41,7 @@ function App() {
           <Route path="/Smooth" element={<Smooth />} />
           <Route path="login" element={<Login />} />
           <Route path="/smooth" element={<Smooth />} />
-          <Route path="/smooth/:id" element={<Detail/>}/>
+          <Route path="/smooth/:id" element={<Detail />} />
           <Route path="/FoodForEoss" element={<FoodForEoss />} />
           <Route path="/Cereal" element={<Cereal />} />
           <Route path="/Cakes" element={<Cakes />} />
