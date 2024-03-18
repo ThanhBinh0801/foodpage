@@ -85,9 +85,13 @@ function Login({ setLoggedInUser }) {
                         </Form.Group>
                         {error && <p className="text-danger">{error}</p>}
                         <div className="d-grid">
-                          <Button variant="primary" type="submit" className="login">
+                          <button
+                            variant="primary"
+                            type="submit"
+                            className="login"
+                          >
                             Login
-                          </Button>
+                          </button>
                         </div>
                       </Form>
                       <div className="mt-3">
