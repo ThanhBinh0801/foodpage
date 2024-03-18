@@ -48,7 +48,7 @@ function Home() {
       </div>
       <div>
         <Link>
-          <span>East on stomach snacks</span>
+          <span>Eat on stomach snacks</span>
           <span>
             <img src="./imgHome/anhEasyonStomachSnacks.png" alt="" />
           </span>
