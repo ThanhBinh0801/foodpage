@@ -17,8 +17,7 @@
   display: flex;
   justify-content: center;
 }
-.namepricesearch  {
-  
+.namepricesearch {
   display: flex;
 }
 .searchresult {
@@ -30,7 +29,6 @@
   margin: 18px 0;
   border-radius: 10px;
   transition: 0.3s;
-  
 }
 
 .name {
@@ -76,13 +74,12 @@
 }
 .header {
   height: 70px;
-  background-color: #FFA500;
+  background-color: #ffa500;
   font-family: sans-serif;
 }
 .navheader > * {
   text-decoration: none;
   color: black;
-
 }
 .card-search {
   background-color: rgb(246, 231, 182);
@@ -115,14 +112,13 @@
 .view:active {
   box-shadow: inset 2px 2px 5px #333333;
 }
-.product
-{
+.product {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  flex-wrap:wrap;
-  float:none;
+  flex-wrap: wrap;
+  float: none;
 }
 .homepage {
   text-align: center;
@@ -134,32 +130,38 @@
   margin-right: 700px;
   margin-left: 700px;
 }
-.FoodShopmenu{
+.FoodShopmenu {
   font-size: 60px;
 }
-.Healthyimgbox{
+.Healthyimgbox {
   position: relative;
   width: 100%;
-
 }
-.HealthySnacksName{
+.HealthySnacksName {
   display: flex;
   flex-direction: column;
 }
-.Healthytitle{
-  width:max-content;
-  margin:auto;
+.Healthytitle {
+  width: max-content;
+  margin: auto;
   position: absolute;
   left: 25%;
   top: 20%;
 }
-.Healthytitle span{
+.Healthytitle span {
   text-decoration: none;
   color: orange;
-  background-color:rgb(250,250,240);
+  background-color: rgb(250, 250, 240);
   border-radius: 10px;
   font-size: 30px;
   padding: 10px 60px;
   border-top: 1px solid #feab0d;
   border-left: 1px solid #feab0d;
+}
+.login {
+  width: 30%;
+  text-align: center;
+  display: flex;
+  justify-self: center;
+  height: 150%;
 }
