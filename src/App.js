@@ -22,7 +22,9 @@ function App() {
         <nav className="navheader">
           <Menu />
           <Link to="/SearchButton">Search</Link>
-          <Link to="/Home" className="FoodShopmenu">Food Shop</Link>
+          <Link to="/" className="FoodShopmenu">
+            Food Shop
+          </Link>
           <Link to="/contact">Contact</Link>
           {loggedInUser ? ( // Check if user is logged in
             <Link to="/profile">{loggedInUser.Name}</Link> // Display user's name as link
@@ -32,7 +34,7 @@ function App() {
         </nav>
         <Routes>
           <Route path="/SearchButton" element={<SearchButton />} />
-          <Route path="Home" element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route path="/contact" element={<Contact />} />
           <Route
             path="/login"
