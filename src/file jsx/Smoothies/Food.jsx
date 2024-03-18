@@ -8,7 +8,7 @@ function Food(props) {
         onClick={() => navigate(`/smooth/${props.id}`)}
       >
         <p className="tenthanhphan">{props.Name}</p>
-        <img src={props.img} alt="" />
+        <img src={props.img} alt="Hinh Dai dien" />
       </div>
     </div>
   );

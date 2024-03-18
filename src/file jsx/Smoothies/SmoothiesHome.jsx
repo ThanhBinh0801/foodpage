@@ -46,11 +46,12 @@ function Smooth() {
           {chunkArray(smoothies, 2).map((pair, index) => (
             <div className="row" key={index}>
               {pair.map((smoothie, innerIndex) => (
-                <div className="col" key={innerIndex}>
+                <div className="col">
                   <Food
                     Name={smoothie.Name}
                     img={smoothie.img}
                     id={smoothie.id}
+                    key={innerIndex}
                   />
                 </div>
               ))}

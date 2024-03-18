@@ -1,22 +1,23 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Col, Button, Row, Container, Card, Form } from "react-bootstrap";
 import Search from "./List";
 
 function SearchButton() {
   const [searchText, setSearchText] = useState("");
+  const [allData, setAllData] = useState([]);
   const [searchResult, setSearchResult] = useState(null);
-  
-  const handleInputChange = (event) => {
-    setSearchText(event.target.value);
-  };
+  const [isLoading, setIsLoading] = useState(false);
+  const [noResult, setNoResult] = useState(false);
 
-  const handleSearch = async () => {
-    if (searchText.trim() === "") {
-      // alert("Vui lòng nhập từ khóa tìm kiếm.");
-      return;
-    }
+  useEffect(() => {
+    // Fetch all data when component mounts
+    fetchData();
+  }, []);
 
+  const fetchData = async () => {
     try {
+      setIsLoading(true);
+
       const foodResponse = await fetch(
         "https://65f070efda8c6584131bc736.mockapi.io/FoodForEOSS"
       );
@@ -63,15 +64,40 @@ function SearchButton() {
         ...smoothieData,
       ];
 
-      const results = allData.filter((item) =>
-        item.Name.toLowerCase().includes(searchText.toLowerCase())
-      );
-
-      setSearchResult(results);
+      setAllData(allData);
     } catch (error) {
       console.error("Error:", error);
+    } finally {
+      setIsLoading(false);
     }
   };
+
+  const handleInputChange = (event) => {
+    setSearchText(event.target.value);
+  };
+
+  const handleSearch = () => {
+    if (searchText.trim() === "") {
+      return;
+    }
+
+    setIsLoading(true);
+    setNoResult(false);
+
+    const results = allData.filter((item) =>
+      item.Name.toLowerCase().includes(searchText.toLowerCase())
+    );
+
+    if (results.length === 0) {
+      setNoResult(true);
+      setSearchResult(null);
+    } else {
+      setSearchResult(results);
+    }
+
+    setIsLoading(false);
+  };
+
   const handleKeyDown = (event) => {
     if (event.key === "Enter") {
       event.preventDefault();
@@ -98,7 +124,7 @@ function SearchButton() {
                           className="mb-3"
                           controlId="formBasicPassword"
                         >
-                          <Form.Label>Your search</Form.Label>
+                          <Form.Label>Your Search</Form.Label>
                           <Form.Control
                             type="Text"
                             value={searchText}
@@ -109,7 +135,9 @@ function SearchButton() {
                           />
                         </Form.Group>
                         <div className="d-grid">
-                          <Button onClick={handleSearch}>Search</Button>
+                          <Button onClick={handleSearch} disabled={isLoading}>
+                            {isLoading ? 'Loading...' : 'Search'}
+                          </Button>
                         </div>
                       </Form>
                     </div>
@@ -119,27 +147,29 @@ function SearchButton() {
             </Col>
           </Row>
         </Container>
-        {searchResult && (
-          <div>
-            <h2>Result:</h2>
-            <ul>
-              {searchResult.map((result, index) => (
-                <div key={index}>
-                  <Search
-                    Image={result.Image}
-                    Name={result.Name}
-                    Price={result.Price}
-                  />
-                </div>
-              ))}
-            </ul>
-          </div>
+        {noResult ? (
+          <h2>No result</h2>
+        ) : (
+          searchResult && (
+            <div>
+              <h2>Result:</h2>
+              <ul>
+                {searchResult.map((result, index) => (
+                  <div key={index}>
+                    <Search
+                      Image={result.Image}
+                      Name={result.Name}
+                      Price={result.Price}
+                    />
+                  </div>
+                ))}
+              </ul>
+            </div>
+          )
         )}
       </header>
       <section></section>
-      <footer>
-        
-      </footer>
+      <footer></footer>
     </div>
   );
 }

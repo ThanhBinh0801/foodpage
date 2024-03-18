@@ -57,27 +57,24 @@ function Home() {
       <br /> <br />
       <div>
         <Link>
+         
           <span>
             <img src="./imgHome/anhEasyonStomachSnacks.png" alt="" />
           </span>
         </Link>
         <div className="detail">
-          <div>
-            <div>
-              <Link to="/FoodForEoss">
-                <span>
-                  <img src="./imgHome/anhFoodforEOSS.png" alt="" />
-                </span>
-              </Link>
-            </div>
-            <div>
-              <Link to="/DrinksForEoss">
-                <span>
-                  <img src="./imgHome/anhDrinks.png" alt="" />
-                </span>
-              </Link>
-            </div>
-          </div>
+          <Link to="/FoodForEoss">
+       
+            <span>
+              <img src="./imgHome/anhFoodforEOSS.png" alt="" />
+            </span>
+          </Link>
+          <Link to="/DrinksForEoss">
+           
+            <span>
+              <img src="./imgHome/anhDrinks.png" alt="" />
+            </span>
+          </Link>
         </div>
       </div>
     </div>
