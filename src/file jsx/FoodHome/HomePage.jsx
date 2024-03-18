@@ -2,12 +2,13 @@ import { Link } from "react-router-dom";
 function Home() {
   return (
     <div className="homepage">
+      <br />
       <div>
-        <Link>
-          <span>Healthy Snacks</span>
-          <span>
+        <Link className="HealthySnacksName">
+          <div className="Healthyimgbox">
             <img src="./imgHome/anhmenuchinh.png" alt="" />
-          </span>
+          </div>
+          <div className="Healthytitle"><span >Healthy Snacks</span></div>
         </Link>
         <div className="detail">
           <Link to="/Smooth">
@@ -23,7 +24,7 @@ function Home() {
             </span>
           </Link>
         </div>
-      </div>
+      </div> <br />
       <div>
         <Link>
           <span>Snacks for Kids</span>
@@ -45,7 +46,7 @@ function Home() {
             </span>
           </Link>
         </div>
-      </div>
+      </div> <br />
       <div>
         <Link>
           <span>Eat on stomach snacks</span>
