@@ -43,7 +43,7 @@ function App() {
           <Route path="/Smooth" element={<Smooth />} />
           <Route path="login" element={<Login />} />
           <Route path="/Smooth" element={<Smooth />} />
-          <Route path="/smooth/:id" element={<Detail />} />
+          <Route path="/Smooth/:id" element={<Detail />} />
           <Route path="/FoodForEoss" element={<FoodForEoss />} />
           <Route path="/Cereal" element={<Cereal />} />
           <Route path="/Cakes" element={<Cakes />} />

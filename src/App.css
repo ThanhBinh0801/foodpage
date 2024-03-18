@@ -60,7 +60,7 @@
 .App {
   text-align: center;
   background-color: rgb(255, 235, 204);
-  height:unset;
+  height: unset;
 }
 .navheader {
   font-size: xx-large;
@@ -130,7 +130,6 @@
   font-size: 60px;
 }
 .HealthySnacksName {
-
   display: flex;
 }
 .Healthytitle {
@@ -156,4 +155,7 @@
   display: flex;
   justify-self: center;
   height: 150%;
+}
+.st {
+  text-decoration: none;
 }

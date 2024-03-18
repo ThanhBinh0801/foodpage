@@ -16,24 +16,40 @@ function Menu() {
                 menuVariant="light"
                 className="DropHealthy"
               >
-                <NavDropdown.Item ><Link to='/Smooth'>Smoothies</Link></NavDropdown.Item>
-                <NavDropdown.Item ><Link to='/Cereal'>Cereal</Link></NavDropdown.Item>
+                <NavDropdown.Item>
+                  <Link to="/Smooth" className="st">
+                    Smoothies
+                  </Link>
+                </NavDropdown.Item>
+                <NavDropdown.Item>
+                  <Link to="/Cereal">Cereal</Link>
+                </NavDropdown.Item>
               </NavDropdown>
               <NavDropdown
                 title={<span style={{ color: "white" }}>Snacks For Kids</span>}
                 menuVariant="light"
                 className="DropHealthy"
               >
-                <NavDropdown.Item ><Link to='/Cakes'>Cakes</Link></NavDropdown.Item>
-                <NavDropdown.Item ><Link to='/Yogurt'>Yogurt</Link></NavDropdown.Item>
+                <NavDropdown.Item>
+                  <Link to="/Cakes">Cakes</Link>
+                </NavDropdown.Item>
+                <NavDropdown.Item>
+                  <Link to="/Yogurt">Yogurt</Link>
+                </NavDropdown.Item>
               </NavDropdown>
               <NavDropdown
-                title={<span style={{ color: "white" }}>Easy On Stomach Snacks</span>}
+                title={
+                  <span style={{ color: "white" }}>Easy On Stomach Snacks</span>
+                }
                 menuVariant="light"
                 className="DropHealthy"
               >
-                <NavDropdown.Item ><Link to='/FoodForEOSS'>FoodForEOSS</Link></NavDropdown.Item>
-                <NavDropdown.Item ><Link to='/Yogurt'>DrinkForEOSS</Link></NavDropdown.Item>
+                <NavDropdown.Item>
+                  <Link to="/FoodForEOSS">FoodForEOSS</Link>
+                </NavDropdown.Item>
+                <NavDropdown.Item>
+                  <Link to="/Yogurt">DrinkForEOSS</Link>
+                </NavDropdown.Item>
               </NavDropdown>
               <NavDropdown.Item href="#action/3.4">Smoothies</NavDropdown.Item>
             </NavDropdown>
