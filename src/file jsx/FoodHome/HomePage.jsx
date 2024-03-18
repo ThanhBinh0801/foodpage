@@ -49,20 +49,20 @@ function Home() {
       </div> <br />
       <div>
         <Link>
-          <span>Eat on stomach snacks</span>
+          <span>Easy on stomach snacks</span>
           <span>
             <img src="./imgHome/anhEasyonStomachSnacks.png" alt="" />
           </span>
         </Link>
         <div className="detail">
           <Link to="/FoodForEoss">
-            <span>Foods for EOSS</span>
+            <span>Foods For EOSS</span>
             <span>
               <img src="./imgHome/anhFoodforEOSS.png" alt="" />
             </span>
           </Link>
           <Link to="/DrinksForEoss">
-            <span>Drinks</span>
+            <span>Drinks For EOSS</span>
             <span>
               <img src="./imgHome/anhDrinks.png" alt="" />
             </span>
