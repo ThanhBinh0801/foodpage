@@ -128,19 +128,12 @@
   text-align: center;
   background-color: bisque;
 }
-.detail {
-  display: flex;
-  justify-content: space-around;
-  margin-right: 700px;
-  margin-left: 700px;
-}
 .FoodShopmenu{
   font-size: 60px;
 }
 .Healthyimgbox{
   position: relative;
   width: 100%;
-
 }
 .HealthySnacksName{
   text-align: center;
@@ -161,4 +154,13 @@
   padding: 10px 60px;
   border-top: 1px solid #feab0d;
   border-left: 1px solid #feab0d;
+}
+.detail {
+  display: flex;
+  justify-content: space-around;
+  margin-right: 700px;
+  margin-left: 700px;
+}
+.detail div{
+  display: flex;
 }
