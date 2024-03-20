@@ -14,6 +14,9 @@ import Cakes from "./file jsx/CakesHome/CakesHome";
 import Yogurt from "./file jsx/YogurtHome/YogurtHome";
 import Detail from "./file jsx/Smoothies/Sinhtobo";
 import DrinksForEoss from "./file jsx/DrinksForEossHome/DrinksForEoss";
+import { FaCoffee } from "react-icons/fa";
+import { MdPhone } from "react-icons/md";
+import { MdEmail } from "react-icons/md";
 function App() {
   const [loggedInUser, setLoggedInUser] = useState(null);
   return (
@@ -51,6 +54,23 @@ function App() {
           <Route path="/DrinksForEoss" element={<DrinksForEoss />} />
         </Routes>
       </header>
+      <footer>
+        <div>
+          <div>Store</div>
+          <br />
+          <div>FoodShop</div>
+          <br />
+          <div>
+            <FaCoffee /> 590 Cach Mang Thang 8, Ward 11, District 3
+          </div>
+          <div>
+            <MdPhone /> +84 123 456 789
+          </div>
+          <div>
+            <MdEmail /> avc@gmail.com
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }
