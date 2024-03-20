@@ -58,10 +58,8 @@ function App() {
       </section>
       <footer>
         <div>
-          <div>Store</div>
-          <br />
+          <div>Store</div>         
           <div>FoodShop</div>
-          <br />
           <div>
             <FaCoffee /> 590 Cach Mang Thang 8, Ward 11, District 3
           </div>
@@ -72,6 +70,7 @@ function App() {
             <MdEmail /> avc@gmail.com
           </div>
         </div>
+        <div></div>
       </footer>
     </div>
   );

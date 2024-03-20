@@ -27,7 +27,6 @@ function Contact() {
           <Popup />
         </div>
       </section>
-      <footer></footer>
     </div>
   );
 }
