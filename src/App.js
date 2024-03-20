@@ -35,6 +35,8 @@ function App() {
             <Link to="/login">Login</Link>
           )}
         </nav>
+      </header>
+      <section>
         <Routes>
           <Route path="/SearchButton" element={<SearchButton />} />
           <Route path="/" element={<Home />} />
@@ -53,7 +55,7 @@ function App() {
           <Route path="/Yogurt" element={<Yogurt />} />
           <Route path="/DrinksForEoss" element={<DrinksForEoss />} />
         </Routes>
-      </header>
+      </section>
       <footer>
         <div>
           <div>Store</div>
