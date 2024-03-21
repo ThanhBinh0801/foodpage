@@ -39,10 +39,11 @@ function FoodForEoss() {
   return (
     <div>
       <section className="container">
-        <td />
+        <td /> <br />
+        <img src="./imgFoodForEoss/anhFoodForEoss.png" alt="" />
         <div className="col anhbensmoothies">
           {chunkArray(smoothies, 2).map((pair, index) => (
-            <div className="row" key={index}>
+            <div className="row dichuyenanhsanpham" key={index}>
               {pair.map((smoothie, innerIndex) => (
                 <div className="col" key={innerIndex}>
                   <Food Name={smoothie.Name} img={smoothie.img} />

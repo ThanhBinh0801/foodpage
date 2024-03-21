@@ -126,33 +126,47 @@
 .FoodShopmenu {
   font-size: 60px;
 }
-.Healthyimgbox {
-  position: relative;
-  width: 100%;
-}
-.HealthySnacksName {
-  text-align: center;
-}
-.Healthytitle {
-  width: max-content;
-  margin: auto;
-  position: absolute;
-  left: 25%;
-  top: 20%;
-}
-.Healthytitle span {
-  text-decoration: none;
-  color: orange;
-  background-color: rgb(250, 250, 240);
-  border-radius: 10px;
-  font-size: 30px;
-  padding: 10px 60px;
-  border-top: 1px solid #feab0d;
-  border-left: 1px solid #feab0d;
-}
 .detail {
   display: flex;
   justify-content: space-around;
-  margin-right: 700px;
-  margin-left: 700px;
+  margin-top: 10px;
+}
+.marginautu {
+  margin: auto;
+  display: flex;
+}
+.marginautu > * {
+  margin: 0 70px;
+}
+img {
+  border-radius: 20px;
+  filter: drop-shadow(0 0 10px #e0c581);
+}
+.tenthanhphan {
+  font-size: 20px;
+  font-weight: 400;
+  border-radius: 10px;
+  background-color: #feab0d;
+  width: 66%;
+}
+.tenthanhphan1 {
+  font-size: 20px;
+  font-weight: 400;
+  border-radius: 10px;
+  background-color: #feab0d;
+  width: 70%;
+  margin-left: 30px;
+}
+.cacsanphamchinh {
+  width: fit-content;
+  margin: 10px 77px;
+}
+.dichuyenanhsanpham > :nth-child(odd) {
+  display: flex;
+  justify-content: end;
+}
+.imgcareal {
+  display: flex;
+  justify-content: center;
+  margin-left: 197px;
 }
