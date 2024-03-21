@@ -1,6 +1,7 @@
 .App {
   font-family: sans-serif;
 }
+
 .map {
   display: flex;
   justify-content: center;
@@ -58,9 +59,9 @@
   border-top: 1.5px solid #ffffff;
 }
 .App {
+  height: max-content;
   text-align: center;
   background-color: rgb(255, 235, 204);
-  height:unset;
 }
 .navheader {
   font-size: xx-large;
@@ -121,18 +122,20 @@
 }
 .homepage {
   text-align: center;
-}
-.detail {
-  display: flex;
-  justify-content: space-around;
+  background-color: bisque;
 }
 .FoodShopmenu {
   font-size: 60px;
 }
 
-.HealthySnacksName {
+.detail > div {
 
-  display: flex;
+.Healthyimgbox {
+  position: relative;
+  width: 100%;
+}}
+.HealthySnacksName {
+  text-align: center;
 }
 .Healthytitle {
   width: max-content;
@@ -151,10 +154,9 @@
   border-top: 1px solid #feab0d;
   border-left: 1px solid #feab0d;
 }
-.login {
-  width: 30%;
-  text-align: center;
+.detail {
   display: flex;
-  justify-self: center;
-  height: 150%;
+  justify-content: space-around;
+  margin-right: 700px;
+  margin-left: 700px;
 }

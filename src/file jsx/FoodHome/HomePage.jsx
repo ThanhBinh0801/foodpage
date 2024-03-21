@@ -13,16 +13,16 @@ function Home() {
           <div>
             <div>
               <Link to="/Smooth">
-                <span>
+                <div>
                   <img src="./imgHome/anhSmoothies.png" alt="" />
-                </span>
+                </div>
               </Link>
             </div>
             <div>
               <Link to="/Cereal">
-                <span>
+                <div>
                   <img src="./imgHome/anhCereal.png" alt="" />
-                </span>
+                </div>
               </Link>
             </div>
           </div>
@@ -31,50 +31,49 @@ function Home() {
       <br /> <br />
       <div>
         <Link>
-          <span>
+          <div>
             <img src="./imgHome/anhSnacksforkids.png" alt="" />
-          </span>
+          </div>
         </Link>
         <div className="detail">
           <div>
             <div>
               <Link to="/Cakes">
-                <span>
+                <div>
                   <img src="./imgHome/anhCakes.png" alt="" />
-                </span>
+                </div>
               </Link>
             </div>
             <div>
               <Link to="/Yogurt">
-                <span>
+                <div>
                   <img src="./imgHome/anhYogurt.png" alt="" />
-                </span>
+                </div>
               </Link>
             </div>
           </div>
         </div>
       </div>{" "}
-      <br /> <br />
+      <br />
       <div>
         <Link>
-         
-          <span>
             <img src="./imgHome/anhEasyonStomachSnacks.png" alt="" />
-          </span>
         </Link>
         <div className="detail">
-          <Link to="/FoodForEoss">
-       
-            <span>
-              <img src="./imgHome/anhFoodforEOSS.png" alt="" />
-            </span>
-          </Link>
-          <Link to="/DrinksForEoss">
-           
-            <span>
-              <img src="./imgHome/anhDrinks.png" alt="" />
-            </span>
-          </Link>
+         <div>
+            <Link to="/FoodForEoss">
+              <div>
+                <img src="./imgHome/anhFoodforEOSS.png" alt="" />
+              </div>
+            </Link>
+         </div>
+         <div>
+            <Link to="/DrinksForEoss">
+              <div>
+                <img src="./imgHome/anhDrinks.png" alt="" />
+              </div>
+            </Link>
+         </div>
         </div>
       </div>
     </div>

@@ -14,6 +14,9 @@ import Cakes from "./file jsx/CakesHome/CakesHome";
 import Yogurt from "./file jsx/YogurtHome/YogurtHome";
 import Detail from "./file jsx/Smoothies/Sinhtobo";
 import DrinksForEoss from "./file jsx/DrinksForEossHome/DrinksForEoss";
+import { FaCoffee } from "react-icons/fa";
+import { MdPhone } from "react-icons/md";
+import { MdEmail } from "react-icons/md";
 function App() {
   const [loggedInUser, setLoggedInUser] = useState(null);
   return (
@@ -32,6 +35,8 @@ function App() {
             <Link to="/login">Login</Link>
           )}
         </nav>
+      </header>
+      <section>
         <Routes>
           <Route path="/SearchButton" element={<SearchButton />} />
           <Route path="/" element={<Home />} />
@@ -42,15 +47,31 @@ function App() {
           />
           <Route path="/Smooth" element={<Smooth />} />
           <Route path="login" element={<Login />} />
-          <Route path="/smooth" element={<Smooth />} />
-          <Route path="/smooth/:id" element={<Detail />} />
+          <Route path="/Smooth" element={<Smooth />} />
+          <Route path="/Smooth/:id" element={<Detail />} />
           <Route path="/FoodForEoss" element={<FoodForEoss />} />
           <Route path="/Cereal" element={<Cereal />} />
           <Route path="/Cakes" element={<Cakes />} />
           <Route path="/Yogurt" element={<Yogurt />} />
           <Route path="/DrinksForEoss" element={<DrinksForEoss />} />
         </Routes>
-      </header>
+      </section>
+      <footer>
+        <div>
+          <div>Store</div>         
+          <div>FoodShop</div>
+          <div>
+            <FaCoffee /> 590 Cach Mang Thang 8, Ward 11, District 3
+          </div>
+          <div>
+            <MdPhone /> +84 123 456 789
+          </div>
+          <div>
+            <MdEmail /> avc@gmail.com
+          </div>
+        </div>
+        <div></div>
+      </footer>
     </div>
   );
 }
