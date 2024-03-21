@@ -40,16 +40,16 @@ function Smooth() {
   return (
     <div>
       <section className="container">
-        <td />
-        <img src="./imgSmoothies/anhsinhto.jpg" alt="" />
+        <td /> <br />
+        <img src="./imgSmoothies/anhSmoothies.png" alt="" />
         <div className="col anhbensmoothies">
           {chunkArray(smoothies, 2).map((pair, index) => (
-            <div className="row" key={index}>
+            <div className="row  dichuyenanhsanpham" key={index}>
               {pair.map((smoothie, innerIndex) => (
                 <div className="col">
                   <Food
-                    Name={smoothie.Name}
                     img={smoothie.img}
+                    Name={smoothie.Name}
                     id={smoothie.id}
                     key={innerIndex}
                   />
