@@ -21,7 +21,7 @@ function App() {
   const [loggedInUser, setLoggedInUser] = useState(null);
   return (
     <div className="App">
-      <header className="header">
+      <div className="header">
         <nav className="navheader">
           <Menu />
           <Link to="/SearchButton">Search</Link>
@@ -35,8 +35,8 @@ function App() {
             <Link to="/login">Login</Link>
           )}
         </nav>
-      </header>
-      <section>
+      </div>
+      <div>
         <Routes>
           <Route path="/SearchButton" element={<SearchButton />} />
           <Route path="/" element={<Home />} />
@@ -55,8 +55,8 @@ function App() {
           <Route path="/Yogurt" element={<Yogurt />} />
           <Route path="/DrinksForEoss" element={<DrinksForEoss />} />
         </Routes>
-      </section>
-      <footer>
+      </div>
+      <div>
         <div>
           <div>Store</div>         
           <div>FoodShop</div>
@@ -71,7 +71,7 @@ function App() {
           </div>
         </div>
         <div></div>
-      </footer>
+      </div>
     </div>
   );
 }
