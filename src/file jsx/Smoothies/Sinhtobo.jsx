@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom";
 import React, { useState, useEffect } from "react";
-import Food from "./Food";
+import Chitiet from "./Chitiet";
 function Detail() {
   const { id } = useParams();
   const [sanpham, setsanpham] = useState({});
@@ -29,7 +29,7 @@ function Detail() {
   // console.log(sanpham);
   return (
     <div>
-      <Food Name={sanpham.Name} img={sanpham.img} />
+      <Chitiet Name={sanpham.Name} img={sanpham.img} price={sanpham.price}/>
     </div>
   );
 }

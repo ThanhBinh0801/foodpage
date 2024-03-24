@@ -1,5 +1,7 @@
 .App {
   font-family: sans-serif;
+  text-align: center;
+  background-color: rgb(246, 217, 153);
 }
 
 .map {
@@ -58,21 +60,18 @@
   border-left: 1.5px solid #ffffff;
   border-top: 1.5px solid #ffffff;
 }
-.App {
-  text-align: center;
-  background-color: rgb(255, 235, 204);
-}
 .navheader {
   font-size: xx-large;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 100%;
+  height: max-content;
   background-color: rgba(255, 255, 255, 0.7);
-  border-bottom: 1px solid #ccc;
+  border-bottom: 2px solid #ffffff;
+  margin-bottom: 50px;
 }
 .header {
-  height: 70px;
+  height: max-content;
   background-color: #ffa500;
   font-family: sans-serif;
 }
@@ -169,4 +168,35 @@ img {
   display: flex;
   justify-content: center;
   margin-left: 197px;
+}
+.thongtin{
+  text-align: left;
+  font-size: x-large;
+  font-family: Helvetica Neue;
+
+}
+.price1{
+  width: max-content;
+  padding: 5px 10px;
+  font-size: 30px;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  background-color: #FAFAFA;
+  color: #EE4D2D;
+  transition: 0.3s;
+  box-shadow: #727171;
+}
+.buttonchitiet button{
+  border-radius: 12px;
+  margin-top: 12px;
+  margin-right: 12px;
+  border: 1px solid #EE4D2D;
+  box-shadow: 2px 2px 5px rgb(63, 2, 2);
+}
+.buttonchitiet button:active {
+  background-color: #b1acac;
+}
+.footerlink a {
+  text-decoration: none;
 }
