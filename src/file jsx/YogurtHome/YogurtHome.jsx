@@ -38,7 +38,7 @@ function Yogurt() {
 
   return (
     <div>
-       <section className="container">
+      <section className="container">
         <td /> <br />
         <img src="./imgYogurt/anhYogurt.png" alt="" />
         <div className="col anhbensmoothies">
