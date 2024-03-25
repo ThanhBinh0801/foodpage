@@ -40,6 +40,7 @@ function DrinksForEoss() {
     <div>
       <section className="container">
         <td /> <br />
+        <img src="./imgDrinksForEoss/anhDrinks.png" alt="" />
         <div className="col anhbensmoothies">
           {chunkArray(smoothies, 2).map((pair, index) => (
             <div className="row dichuyenhanhsanpham" key={index}>
